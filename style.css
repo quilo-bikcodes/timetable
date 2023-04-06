@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.video-background {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.video-background video {
+  position: absolute;
+  filter: saturate(210%);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+main {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(rgba(0, 8, 27, 0.771), rgba(0, 0, 0, 0.897));
+  
+  /* background-color: rgba(0, 0, 0, 0.803); */
+}
+
+.get-subjects-with-teachers {
+  display: flex;
+  flex-direction: row;
+  /* align-items: center; */
+  /* justify-content: center; */
+}
+.get-subjects-with-teachers input,
+button {
+  margin: 1rem;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+}
+
+.get-subjects-with-teachers button {
+  padding: 5px 15px;
+  cursor: pointer;
+}
+.get-subjects-with-teachers button:hover {
+  background-color: black;
+  color: white;
+}
+.get-subjects-with-teachers input {
+  width: 20%;
+  background-color: rgba(255, 255, 255, 0.686);
+  /* backdrop-filter: blur(5px); */
+}
+
+.get-subjects-with-teachers input::placeholder {
+  text-align: center;
+  color: rgb(58, 58, 58);
+}
+
+#cards{
+  width: fit-content;
+  margin: 1rem;
+}
+
+.card{
+  color: rgb(24, 38, 51);
+  background-color: rgba(240, 248, 255, 0.907);
+  width: fit-content;
+  display: flex;
+  flex-flow: column;
+  padding: 5px 50px 5px 10px;
+  border-radius: 5px;
+}
+
+
+
+
+
+/* .get-subjects-with-teachers button{
+
+} */
+.test-btn {
+  background-color: aliceblue;
+}
