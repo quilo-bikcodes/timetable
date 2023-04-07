@@ -17,13 +17,15 @@ addBtn.addEventListener("click", () => {
     alert("Details must be longer than 3 characters");
   } else {
     console.log(subjecttxt);
-    const card = document.createElement("div");
-    const subjectcard = document.createElement("span");
-    const teachercard = document.createElement("span");
+    var card = document.createElement("div");
+    var subjectcard = document.createElement("span");
+    var teachercard = document.createElement("span");
     subjectcard.innerText = subjecttxt;
     teachercard.innerText = teachertxt;
-
+    card.addEventListener("dragstart", dragStart);
+    card.addEventListener("dragend", dragEnd);
     card.classList.add("card");
+    card.setAttribute('draggable', 'true');
     subjectcard.setAttribute("id", "subjects");
     teachercard.setAttribute("id", "subject-teachers");
     card.appendChild(subjectcard);
@@ -31,8 +33,8 @@ addBtn.addEventListener("click", () => {
     cards.append(card);
   }
 });
+// window.onscroll = function() {
+//   console.log('scrolling');
+// };
 
-$(window).scroll(function() {
-  console.log("l")
-});
 

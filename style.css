@@ -5,29 +5,29 @@
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
-  scroll-padding-top: 1px;
+  scroll-padding-top: 40px;
   font-family: 'Roboto', sans-serif;
 }
 ::-webkit-scrollbar {
   width: 6px;
-   /* Set width of scrollbar */
+
 }
 
-/* Track */
+
 ::-webkit-scrollbar-track {
   background: #f1f1f1;
   border-radius: 5px; 
 }
 
-/* Handle */
+
 ::-webkit-scrollbar-thumb {
-  background: #888; /* Set color of handle */
+  background: #888; 
   border-radius: 5px; 
 }
 
-/* Handle on hover */
+
 ::-webkit-scrollbar-thumb:hover {
-  background: #555; /* Set color of handle on hover */
+  background: #555; 
 }
 #video-background {
   position: relative;
@@ -103,17 +103,7 @@ button {
   background-color: rgba(255, 255, 255, 0.059);
 }
 
-.card{
-  color: rgb(255, 255, 255);
-  height: 52px;
-  background-color: rgba(0, 0, 0, 0.415);
-  /* width: clamp(1px,fit-content,1px); */
-  width: 180px;
-  display: flex;
-  flex-flow: column;
-  padding: 5px 50px 5px 10px;
-  border-radius: 5px;
-}
+
 
 
 .test-btn {
@@ -160,7 +150,7 @@ button {
   width: 100%;
   padding: 10px 20px;
   border-radius: 5px;
- 
+  cursor: pointer;
   animation: moveUpDown 1s ease-in-out infinite;
 }
 @keyframes moveUpDown {
@@ -203,7 +193,7 @@ button {
   padding: 10px;
   width: 100%;
   background-color: #00000000;
-  backdrop-filter: blur(2px);
+  /* backdrop-filter: blur(2px); */
   transition: background-color 0.3s ease;
 }
 .login nav.dark {
@@ -225,4 +215,40 @@ button {
 .login nav a {
   color: #fff;
   text-decoration: none;
+}
+
+
+.card{
+  color: rgb(255, 255, 255);
+  height: 52px;
+  background-color: rgba(0, 0, 0, 0.415);
+  /* width: clamp(1px,fit-content,1px); */
+  width: 180px;
+  display: flex;
+  flex-flow: column;
+  padding: 5px 50px 5px 10px;
+  border-radius: 5px;
+}
+
+.zone {
+  width: 80%;
+  padding: 10px;
+  margin:100px;
+  max-height: 200px;
+  background-color: #eeeeee4c;
+  border: 2px solid #000;
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: 1.2fr 1.2fr 1.2fr 1.2fr  1.2fr 1.2fr ;
+  grid-template-rows: 1fr 1fr;
+  gap: 18px;
+  contain: content;
+  overflow-y: auto;
+}
+
+.zone-wrapper{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  width: 100%;
 }
